@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpeakSmart - AI Speech Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>SpeakSmart 🗣️</h1>
+    <label for="timeInput">Set Speaking Time (seconds):</label>
+    <input type="number" id="timeInput" min="10" max="300" value="30" />
+    <div class="btn-row">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" style="display:none;">Pause</button>
+      <button id="resumeBtn" style="display:none;">Resume</button>
+      <button id="stopBtn" style="display:none;">Stop</button>
+      <button id="restartBtn" style="display:none;">Restart</button>
+
+    </div>
+    <button id="getFeedbackBtn" style="display:none;">Get Feedback</button>
+    <div id="timerDisplay"></div>
+    <div id="transcriptBox" class="transcript-box" style="display:none;">
+      <h2 style="margin:0 0 8px 0;font-size:1.1rem;">Your Speech Transcript</h2>
+      <div id="transcript" class="transcript"></div>
+    </div>
+    <div id="audioBox" style="display:none; margin-top:10px;">
+      <h3 style="margin:0 0 8px 0;font-size:1.05rem;">Listen to Your Speech</h3>
+      <audio id="audioPlayback" controls></audio>
+    </div>
+    <div id="aiFeedbackBox" class="feedback-box" style="display:none;">
+      <h2 style="margin:0 0 8px 0;font-size:1.1rem;">AI Feedback</h2>
+      <div id="aiFeedback"></div>
+      <div id="aiSuggestions" style="margin-top:10px;"></div>
+      <div id="aiResources" style="margin-top:10px;"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
