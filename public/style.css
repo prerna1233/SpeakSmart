@@ -37,7 +37,7 @@ label {
   font-size: 1.08rem;
 }
 input[type="number"] {
-  width: 100%;
+  width: 90%;
   padding: 12px 14px;
   border: 1.5px solid #b2dfdb;
   border-radius: 10px;
