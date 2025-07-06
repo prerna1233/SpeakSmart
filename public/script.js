@@ -200,6 +200,7 @@ getFeedbackBtn.addEventListener('click', async () => {
   aiFeedbackBox.style.display = 'block';
   
   aiFeedback.textContent = 'Loading feedback...';
+  // const BASE_URL = "http://localhost:3000";
 const BASE_URL = "https://your-actual-render-url.onrender.com";
 
   try {
